@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/CameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/CameraImageView" />
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:layout_margin="8dp"
+            android:id="@+id/ButtonSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Save photo"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_margin="8dp"
+            android:id="@+id/ButtonTake"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Take photo"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</FrameLayout>

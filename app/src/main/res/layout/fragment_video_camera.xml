@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.VideoCameraFragment">
+
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/CameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:layout_margin="8dp"
+            android:id="@+id/ButtonRecord"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Record video"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+</FrameLayout>
